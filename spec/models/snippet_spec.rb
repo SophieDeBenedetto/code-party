@@ -20,5 +20,12 @@ RSpec.describe Snippet, type: :model do
 
       expect(snippet.user).to eq(user)
     end
+
+    it "can belong to a lab" do 
+      snippet = FactoryGirl.build(:snippet)
+      lab = Lab.create(name: "Test Lab")
+      lab.snippets << snippet
+      expect(snippet.lab).to eq(lab)
+    end
   end
 end

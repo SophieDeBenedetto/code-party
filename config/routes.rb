@@ -1,9 +1,16 @@
 Rails.application.routes.draw do
+  resources :labs
   resources :snippets
   devise_for :users
   resources :users
 
   root 'welcome#welcome'
+
+  devise_scope :user do
+    get "/login" => "devise/sessions#new"
+    get "signup" => "devise/registrations#new"
+    get "logout" => "devise/sessions#destroy"
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
