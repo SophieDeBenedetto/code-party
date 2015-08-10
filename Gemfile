@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'rails', '4.2.3'
+gem 'actioncable', github: 'rails/actioncable'
+
+gem 'puma'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'capybara'

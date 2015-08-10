@@ -1,0 +1,22 @@
+<h1><%=@lab.name%></h1>
+<h2><%=@lab.description%></h2>
+
+<div>
+<ul><%@lab.snippets.each do |s|%>
+<li> snippet: <%=s.content%></li>
+<li> programmer: <%=s.user.name%></li>
+<%end%>
+</ul>
+</div>
+
+
+Add your snippet!
+
+<%=form_for @snippet, :remote=> true do |f|%>
+  <%=f.label :content%>
+  <%=f.text_area :content %>
+  <%=f.hidden_field :lab, value: @lab.id%>
+  <%=f.submit "create"%>
+<%end%>
+
+
