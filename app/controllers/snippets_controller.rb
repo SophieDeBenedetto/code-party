@@ -5,9 +5,8 @@ class SnippetsController < ApplicationController
     @snippet.user = current_user
     @snippet.lab = Lab.find(params[:snippet][:lab])
     @snippet.save
-
    ActionCable.server.broadcast 'snippets',
-    message: @snippet.content,
+    snippet: @snippet.content,
     user: @snippet.user
 
     head :ok

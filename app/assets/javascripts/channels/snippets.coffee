@@ -1,6 +1,6 @@
-App.messages = App.cable.subscriptions.create 'MessagesChannel',
+App.snippets = App.cable.subscriptions.create 'SnippetsChannel',
   received: (data) ->
-    $('#messages').append @renderMessage(data)
+    $('#snippets').append @renderSnippet(data)
 
-  renderMessage: (data) ->
+  renderSnippet: (data) ->
     "<p><b>[#{data.user}]:</b> #{data.content}</p>"
