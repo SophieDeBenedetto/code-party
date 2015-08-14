@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require codemirror
- *= require codemirror/themes/paraiso-light
+ *= require codemirror/themes/paraiso-light.css
 
  *= require_tree .
  *= require_self
