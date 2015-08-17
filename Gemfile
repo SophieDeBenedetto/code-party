@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
-
+gem 'imgkit'
+gem 'wkhtmltoimage-binary'
 gem 'actioncable', github: 'rails/actioncable'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'puma'
-
+gem 'codemirror-rails'
 gem 'capybara'
 gem 'rails', '4.2.1'
 gem 'pg'

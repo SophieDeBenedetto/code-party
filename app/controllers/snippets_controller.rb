@@ -1,15 +1,25 @@
 class SnippetsController < ApplicationController
 
   def create
-    @snippet = Snippet.create(snippet_params)
-    @snippet.user = current_user
-    @snippet.lab = Lab.find(params[:snippet][:lab])
-    @snippet.save
-   ActionCable.server.broadcast 'snippets',
-    snippet: @snippet.content,
-    user: @snippet.user
+    binding.pry
+    kit   = IMGKit.new(html)
+    img   = kit.to_img(:png)
+    file  = Tempfile.new(["template_#{model.id}", 'png'], 'tmp',
+                         :encoding => 'ascii-8bit')
+    file.write(img)
+    file.flush
+    model.snapshot = file
+    model.save
+    file.unlink
+   #  @snippet = Snippet.create(snippet_params)
+   #  @snippet.user = current_user
+   #  @snippet.lab = Lab.find(params[:snippet][:lab])
+   #  @snippet.save
+   # ActionCable.server.broadcast 'snippets',
+   #  snippet: @snippet.content,
+   #  user: @snippet.user
 
-    head :ok
+   #  head :ok
   end
 
   private
