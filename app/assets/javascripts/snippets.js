@@ -5,18 +5,18 @@ $(function(){
 
 function submitListener(){
   $("#create-snippet").on("click", function(){
-    debugger;
+    // debugger;
     var htmlLines = ""
    
     $(".CodeMirror-line").each(function(i, line){
-      debugger;
+      // debugger;
       htmlLines = htmlLines + ($(line).clone().html())
     })
-    debugger;
+    // debugger;s
     $.ajax({
       url: "/snippets",
       method: "POST",
-      data: $(".CodeMirror-code")
+      data: "html: " + htmlLines
       }).done(function() {
       $( this ).addClass( "done" );
 });

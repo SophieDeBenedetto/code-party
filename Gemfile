@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+gem 'imgkit'
+gem 'wkhtmltoimage-binary'
 gem 'actioncable', github: 'rails/actioncable'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'puma'
