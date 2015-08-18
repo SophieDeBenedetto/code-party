@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.2.1'
+gem 'websocket-rails'
 gem 'eventmachine'
 gem 'figaro'
 gem 'actioncable', github: 'rails/actioncable'
