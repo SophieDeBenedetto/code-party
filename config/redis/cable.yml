@@ -1,8 +1,8 @@
-local: &local
-  :url: redis://localhost:6379
-  :host: localhost
-  :port: 6379
+production: &production
+  :url: <%= ENV["REDIS_URL"] %>
+  :timeout: 1
+development: &development
+  :url: <%= ENV["REDIS_URL"] %>
   :timeout: 1
   :inline: true
-development: *local
-test: *local
+test: *development
