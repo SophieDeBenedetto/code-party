@@ -4,4 +4,5 @@
 
 this.App = {};
 
-App.cable = Cable.createConsumer('ws://127.0.0.1:28080');
+App.cable = Cable.createConsumer('<%= ENV["CABLE_SERVER"] %>');
+// was 28280 so is meant to match up to separate heroku app you deploy with special puma ws server specified in procfile

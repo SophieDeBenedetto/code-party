@@ -10,6 +10,7 @@ gem 'rails', '4.2.1'
 gem 'pg'
 gem 'devise'
 gem 'launchy'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

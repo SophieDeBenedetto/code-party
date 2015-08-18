@@ -1,8 +1,8 @@
 production: &production
-  :url: "redis://h:pbs1b85rfv1jmafru1fgs2fp6p5@ec2-54-83-205-71.compute-1.amazonaws.com:11439"
+  :url: ENV["REDIS_URL"]
   :timeout: 1
 development: &development
-  :url: "redis://h:pbs1b85rfv1jmafru1fgs2fp6p5@ec2-54-83-205-71.compute-1.amazonaws.com:11439"
+  :url: ENV["REDIS_URL"]
   :timeout: 1
   :inline: true
 test: *development
