@@ -1,6 +1,5 @@
 
-actioncable: bundle exec puma -p 80  cable/config.ru
-
+web: bundle exec puma -p 5000  ./config.ru
 
 
 
