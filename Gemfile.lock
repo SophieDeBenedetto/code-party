@@ -254,6 +254,7 @@ DEPENDENCIES
   codemirror-rails
   coffee-rails (~> 4.1.0)
   devise
+  eventmachine
   factory_girl_rails
   figaro
   jbuilder (~> 2.0)
