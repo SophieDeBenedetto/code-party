@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 gem 'figaro'
-gem 'imgkit'
-gem 'wkhtmltoimage-binary'
 gem 'actioncable', github: 'rails/actioncable'
-gem 'coffee-rails', '~> 4.1.0'
 gem 'puma'
 gem 'codemirror-rails'
 gem 'capybara'
@@ -11,6 +8,7 @@ gem 'rails', '4.2.1'
 gem 'pg'
 gem 'devise'
 gem 'launchy'
+gem 'sprockets-rails', github: "rails/sprockets-rails"
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

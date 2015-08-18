@@ -1,8 +1,10 @@
-production: &production
-  :url: "redis://h:pbs1b85rfv1jmafru1fgs2fp6p5@ec2-54-83-205-71.compute-1.amazonaws.com:11439"
-  :timeout: 1
 development: &development
-  :url: "redis://h:pbs1b85rfv1jmafru1fgs2fp6p5@ec2-54-83-205-71.compute-1.amazonaws.com:11439"
+  :url: redis://localhost:6379
+  :host: localhost
+  :port: 6379
   :timeout: 1
   :inline: true
 test: *development
+production: &production
+  :url: ENV["REDISTOGO_URL"]
+  :timeout: 1
