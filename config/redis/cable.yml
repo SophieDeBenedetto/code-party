@@ -7,4 +7,9 @@ development: &development
 test: *development
 production: &production
   :url: ENV["REDISTOGO"]
+  :host: tarpon.redistogo.com
+  :port: 10272
+  :password: 10e348ac30ca0002879ce9d85daf0bb0
+  :inline: true
   :timeout: 1
+
