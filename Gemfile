@@ -12,6 +12,7 @@ gem 'pg'
 gem 'devise'
 gem 'launchy'
 gem 'sprockets-rails', github: "rails/sprockets-rails"
+gem 'rails_12factor'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
