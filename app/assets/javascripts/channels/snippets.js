@@ -3,6 +3,6 @@ App.snippets = App.cable.subscriptions.create('SnippetsChannel', {
     return $('#snippets').append(this.renderSnippet(data));
   },
   renderSnippet: function(data) {
-   return data
+    return "<p> <b>" + data.user.name + " :</b>" + data.snippet + "</p>";
   }
 });
