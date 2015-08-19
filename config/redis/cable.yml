@@ -6,7 +6,7 @@ development: &development
   :inline: true
 test: *development
 production: &production
-  :url: ENV["REDISTOGO"]
+  :url: redis://redistogo:10e348ac30ca0002879ce9d85daf0bb0@tarpon.redistogo.com:10272
   :host: tarpon.redistogo.com
   :port: 10272
   :password: 10e348ac30ca0002879ce9d85daf0bb0
