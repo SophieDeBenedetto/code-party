@@ -276,7 +276,7 @@ PLATFORMS
 DEPENDENCIES
   actioncable!
   capybara
-  celluloid
+  celluloid (= 0.16.1)
   codemirror-rails
   coffee-rails (~> 4.1.0)
   devise

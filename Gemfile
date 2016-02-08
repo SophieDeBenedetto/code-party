@@ -12,7 +12,7 @@ gem 'devise'
 gem 'launchy'
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 gem 'rails_12factor'
-gem 'celluloid'
+gem 'celluloid', '0.16.1'
 gem 'actioncable', github: 'rails/actioncable', branch: 'archive'
 
 gem 'sass-rails', '~> 5.0'
