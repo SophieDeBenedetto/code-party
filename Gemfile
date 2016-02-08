@@ -3,7 +3,6 @@ ruby '2.2.1'
 gem 'websocket-rails'
 gem 'eventmachine'
 gem 'figaro'
-gem 'actioncable', github: 'rails/actioncable'
 gem 'puma'
 gem 'codemirror-rails'
 gem 'capybara'
@@ -13,6 +12,7 @@ gem 'devise'
 gem 'launchy'
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 gem 'rails_12factor'
+gem 'celluloid'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
