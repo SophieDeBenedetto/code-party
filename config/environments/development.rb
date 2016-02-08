@@ -35,7 +35,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  config.middleware.use ChatActionCable
+  # config.middleware.use ChatActionCable
 
-  config.web_socket_server_url = "ws://localhost:3000"
+  # config.web_socket_server_url = "ws://localhost:3000"
 end
