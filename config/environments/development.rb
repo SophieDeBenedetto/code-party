@@ -36,5 +36,5 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  # config.web_socket_server_url = "ws://localhost:3000"
+  config.web_socket_server_url = "ws://localhost:3000/cable"
 end

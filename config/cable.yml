@@ -6,10 +6,11 @@ development: &development
   :inline: true
 test: *development
 production: &production
-  :url: redis://redistogo:10e348ac30ca0002879ce9d85daf0bb0@tarpon.redistogo.com:10272
+  :url: redis://redistogo:0645024dda4cdc17e3a5cb2ca24b5885@tarpon.redistogo.com:11662/
   :host: tarpon.redistogo.com
-  :port: 10272
-  :password: 10e348ac30ca0002879ce9d85daf0bb0
+  :port: 11662
+  :password: 0645024dda4cdc17e3a5cb2ca24b5885
   :inline: true
   :timeout: 1
+
 

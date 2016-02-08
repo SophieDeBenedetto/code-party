@@ -80,5 +80,5 @@ Rails.application.configure do
   config.middleware.use ChatActionCable
 
 
-  config.web_socket_server_url = "wss://pacific-chamber-3660.herokuapp.com/"
+  config.web_socket_server_url = "wss://immense-brushlands-78839.herokuapp.com/cable"
 end
