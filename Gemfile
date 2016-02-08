@@ -13,6 +13,7 @@ gem 'launchy'
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 gem 'rails_12factor'
 gem 'celluloid'
+gem 'actioncable', '~> 0.0.0'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

@@ -10,6 +10,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    actioncable (0.0.0)
     actionmailer (4.2.1)
       actionpack (= 4.2.1)
       actionview (= 4.2.1)
@@ -272,6 +273,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actioncable (~> 0.0.0)
   capybara
   celluloid
   codemirror-rails
