@@ -79,6 +79,6 @@ Rails.application.configure do
 
   config.middleware.use ChatActionCable
 
-
+  Rails.application.config.action_cable.allowed_request_origins = ['https://immense-brushlands-78839.herokuapp.com']
   config.web_socket_server_url = "wss://immense-brushlands-78839.herokuapp.com/cable"
 end
